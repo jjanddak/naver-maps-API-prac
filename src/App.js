@@ -1,10 +1,12 @@
 import './App.css';
-import { RenderAfterNavermapsLoaded, NaverMap } from 'react-naver-maps'; // 패키지 불러오기
+import { RenderAfterNavermapsLoaded, NaverMap, Marker } from 'react-naver-maps'; // 패키지 불러오기
 require("dotenv").config();
 // import dotenv from "dotenv";
 // dotenv.config();
 
 function NaverMapAPI() {
+  const navermaps = window.naver.maps;
+
   return (
     <NaverMap
       mapDivId={'maps-getting-started-uncontrolled'} // default: react-naver-map
@@ -14,7 +16,14 @@ function NaverMapAPI() {
       }}
       defaultCenter={{ lat: 37.554722, lng: 126.970833 }} // 지도 초기 위치
       defaultZoom={13} // 지도 초기 확대 배율
-    />
+    >
+      <Marker
+        key={1}
+        position={new navermaps.LatLng(37.551229, 126.988205)}
+        animation={2}
+        onClick={() => {alert('여기는 N서울타워입니다.');}}
+      />
+    </NaverMap>
   );
 }
 
