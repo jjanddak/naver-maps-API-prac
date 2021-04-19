@@ -1,9 +1,13 @@
 html{
-  background-color: rgb(82, 82, 82);
+  /* width: 1920px;
+  height: 1080px; */
+  
+  /* theme/gray/gray50 */
+  
+  background: #8D8D8D;
 }
 
 .App {
-  margin-top: 200px;
   text-align: center;
   display: flex;
   flex-direction: column;
