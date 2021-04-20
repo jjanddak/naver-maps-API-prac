@@ -30,19 +30,78 @@
 }
 
 .LPcharts {
-  padding: 20px 10px 10px 10px;
-  height: 100%;
+  padding: 0px 10px 10px 10px;
 }
 
 .chartTitle {
   color: #FFFFFF;
   font-style: normal;
   font-weight: bold;
-  float: left
+  text-align: left;
+  width: 100%;
+  padding-bottom: 10px;
+  padding-top: 20px;
 }
 .chartTitle span{
   font-size: 16px;
   line-height: 18px;
 }
 
+#bellchart {
+  height: 316px;
+  background: #21272A;
+  opacity: 0.6;
+  border-radius: 5px;
+  margin: 0;
+}
+
+#cctvchart {
+  height: 175px;
+  background: #21272A;
+  opacity: 0.6;
+  border-radius: 5px;
+  margin: 0;
+}
+
+.systemCTitle {
+  display: flex;
+  justify-content: space-between;
+}
+.chartDate {
+  text-align: right;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+#systemchart {
+  height: 255px;
+  background: #21272A;
+  opacity: 0.6;
+  border-radius: 5px;
+  margin: 0;
+
+}
+
+.servercombobox {
+  /* height: 48px;
+  text-align: center;
+  padding-bottom: 10px; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  color: #C1C7CD;
+  height: 30px;
+
+  /* theme/coolgray/coolgray80 */
+
+  background: #343A3F;
+  /* theme/coolgray/coolgray100 */
+
+  border: 1px solid #121619;
+  border-radius: 2px;
+}
 
