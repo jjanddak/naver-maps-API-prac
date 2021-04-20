@@ -1,0 +1,48 @@
+.LeftPanel {
+  position: absolute;
+  width: 350px;
+  height: 980px;
+  left: 10px;
+  top: 90px;
+
+  flex-direction: column;
+  background: rgba(52, 58, 63, 0.95);
+}
+
+.LPtitle {
+  top: 0;
+  left: 0;
+  width: 100%-3px;
+  height: 46px;
+  margin: 0;
+
+  background: #21272A;
+  border-left: 3px solid #1192E8 ;
+  color: #FFFFFF;
+
+}
+.LPtitle span {
+  line-height: 46px;
+}
+.LPicon {
+  position: absolute;
+  left: 24px;
+}
+
+.LPcharts {
+  padding: 20px 10px 10px 10px;
+  height: 100%;
+}
+
+.chartTitle {
+  color: #FFFFFF;
+  font-style: normal;
+  font-weight: bold;
+  float: left
+}
+.chartTitle span{
+  font-size: 16px;
+  line-height: 18px;
+}
+
+
