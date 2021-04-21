@@ -2,6 +2,7 @@ import './App.css';
 import Head from "./components/Head";
 import dotenv from "dotenv";
 import LeftPanel from './components/LeftPanel';
+import Map from './components/Map';
 dotenv.config();
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
     <div className="App">
       <Head />
       <LeftPanel />
+      <Map />
     </div>
   );
 }
