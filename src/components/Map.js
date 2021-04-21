@@ -63,7 +63,7 @@ function Map() {
   }, []);
 
   return (
-    <div id="map" style={{ width: "100vw", height: "100vh" }} >
+    <div id="map" style={{ width: "110vw", height: "150vh" }} >
 
     </div>
   )

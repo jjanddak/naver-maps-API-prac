@@ -1,0 +1,23 @@
+.tempbar {
+  position: absolute;
+  width: 270px;
+  height: 46px;
+  top: 90px;
+  left: 370px;
+  background-color: rgba(52, 58, 63);
+  color: #A6ADAF;
+  font-size: 12px;
+}
+.tmpcolorbar {
+  border-radius: 10px;
+  margin: 10px 10px 8px 10px;
+  height: 10px;
+  background: linear-gradient(90deg, #7560E1 0%, #1A86C3 15.63%, #5CC67A 33.85%, #F5DF16 50.52%, #EF9542 68.63%, #DE5B32 84.38%, #930E0E 100%);
+  opacity: 0.7;
+}
+.tmprange {
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  justify-content: space-between;
+}
