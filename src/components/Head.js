@@ -46,9 +46,9 @@ function Head() {
         <div>
           <div className="TSlabel">현재시각</div>
           <div className="TScontent">
-            {date.getHours()>10?date.getHours():"0"+date.getHours()}:{date.getMinutes()>10?date.getMinutes():"0"+date.getMinutes()}:{date.getSeconds()>10?date.getSeconds():"0"+date.getSeconds()}
+            {date.getHours()>9?date.getHours():"0"+date.getHours()}:{date.getMinutes()>9?date.getMinutes():"0"+date.getMinutes()}:{date.getSeconds()>9?date.getSeconds():"0"+date.getSeconds()}
             <span className="yearDate">
-              {date.getFullYear()}.{date.getMonth()+1>10?date.getMonth()+1:"0"+(date.getMonth()+1)}.{date.getDate()}
+              {date.getFullYear()}.{date.getMonth()+1>9?date.getMonth()+1:"0"+(date.getMonth()+1)}.{date.getDate()>9?date.getDate():"0"+date.getDate()}
             </span>
           </div>
         </div>
