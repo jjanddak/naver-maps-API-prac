@@ -32,7 +32,7 @@ function Map() {
       // console.log(polygon)
   });
 
-  var polygon2 = new naver.maps.Polygon({
+  var polygon1 = new naver.maps.Polygon({
     map: map,
     paths: [
         [
@@ -53,9 +53,9 @@ function Map() {
             new naver.maps.LatLng(37.4650428, 126.8862991)
         ]
       ],
-      fillColor: '#ff0000',
-      fillOpacity: 0.3,
-      strokeColor: '#ff0000',
+      fillColor: '#EFBE85',
+      fillOpacity: 0.7,
+      strokeColor: '#343A3F',
       strokeOpacity: 0.6,
       strokeWeight: 3
   });

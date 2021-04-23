@@ -1,0 +1,100 @@
+.infoDetail{
+  position: absolute;
+  top: 330px;
+  left: 600px;
+  
+  width: 730px;
+  height: 490px;
+  font-size: 12px;
+
+  background: rgba(52, 58, 63);
+  border-radius: 5px;
+  border: 2px solid #33B1FF;
+  border-left: 4px solid #33B1FF;
+  color: #FFFFFF;
+  padding: 10px;
+}
+.green{
+  color: #42BE65;
+}
+.orange{
+  color: #FFC061;
+}
+.purple{
+  color: #BE95FF;
+}
+.blue{
+  color: #78A9FF;
+}
+
+.detailTitle{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding: 5px;
+
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: bold;
+
+}
+.detailClosebtn{
+  color: #D8D8D8;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.detailUpperbox{
+  background: rgb(62, 69, 75);
+  border-radius: 5px;
+  padding: 5px 5px 5px 5px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+.detailTotalQ{
+  text-align: right;
+  margin-bottom: 10px;
+}
+span.detailQuantity{
+  font-size: 18px;
+  font-weight: bold;
+  padding-right: 5px;
+  margin-left: 10px;
+}
+span.detailUnit{
+  font-size: 10px;
+}
+
+.detailInnerbox{
+  background: #161616;
+  opacity: 0.8;
+  margin: 5px;
+}
+.detailThTitle{
+  padding: 3px 10px 5px 10px;
+  background: #0f0f0f;
+}
+.detailThDetail{
+  background: #222222;
+  padding: 5px 10px 5px 10px;
+
+  text-align: left;
+  display: flex;
+  font-weight: bold;
+}
+.detailDivider{
+  border-left: 1px solid white;
+  width: 1px;
+  height: 20px;
+  margin: 0 10px 0 10px;
+}
+.detailInnerQuantity{
+  font-weight: normal;
+  padding-left: 10px;
+}
+.topradius{
+  border-radius: 5px 5px 0 0;
+}
+.bottomradius{
+  border-radius: 0 0 5px 5px;
+}

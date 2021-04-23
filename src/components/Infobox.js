@@ -1,12 +1,13 @@
 import "./css/Infobox.css";
 
-function Infobox () {
+function Infobox ({infoDetailToggle}) {
+
   return(
     <>
     <div className="infobox" id="info1">
       <div className="infoTitleContainer">
         <span className="infoTitle">가산동</span>
-        <span className="infoDetailbtn">+</span>
+        <span className="infoDetailbtn" onClick={infoDetailToggle}>+</span>
       </div>
 
       <div className="infoUpperbox">
@@ -55,7 +56,7 @@ function Infobox () {
     <div className="infobox" id="info2">
       <div className="infoTitleContainer">
         <span className="infoTitle">독산1동</span>
-        <span className="infoDetailbtn">+</span>
+        <span className="infoDetailbtn" onClick={infoDetailToggle}>+</span>
       </div>
 
       <div className="infoUpperbox">
@@ -103,7 +104,7 @@ function Infobox () {
     <div className="infobox" id="info3">
       <div className="infoTitleContainer">
         <span className="infoTitle">시흥5동</span>
-        <span className="infoDetailbtn">+</span>
+        <span className="infoDetailbtn" onClick={infoDetailToggle}>+</span>
       </div>
 
       <div className="infoUpperbox">
@@ -151,7 +152,7 @@ function Infobox () {
     <div className="infobox" id="info4">
       <div className="infoTitleContainer">
         <span className="infoTitle">시흥3동</span>
-        <span className="infoDetailbtn">+</span>
+        <span className="infoDetailbtn" onClick={infoDetailToggle}>+</span>
       </div>
 
       <div className="infoUpperbox">
@@ -199,7 +200,7 @@ function Infobox () {
     <div className="infobox" id="info5">
       <div className="infoTitleContainer">
         <span className="infoTitle">시흥1동</span>
-        <span className="infoDetailbtn">+</span>
+        <span className="infoDetailbtn" onClick={infoDetailToggle}>+</span>
       </div>
 
       <div className="infoUpperbox">
@@ -247,7 +248,7 @@ function Infobox () {
     <div className="infobox" id="info6">
       <div className="infoTitleContainer">
         <span className="infoTitle">독산3동</span>
-        <span className="infoDetailbtn">+</span>
+        <span className="infoDetailbtn" onClick={infoDetailToggle}>+</span>
       </div>
 
       <div className="infoUpperbox">
@@ -295,7 +296,7 @@ function Infobox () {
     <div className="infobox" id="info7">
       <div className="infoTitleContainer">
         <span className="infoTitle">독산4동</span>
-        <span className="infoDetailbtn">+</span>
+        <span className="infoDetailbtn" onClick={infoDetailToggle}>+</span>
       </div>
 
       <div className="infoUpperbox">
@@ -343,7 +344,7 @@ function Infobox () {
     <div className="infobox" id="info8">
       <div className="infoTitleContainer">
         <span className="infoTitle">독산2동</span>
-        <span className="infoDetailbtn">+</span>
+        <span className="infoDetailbtn" onClick={infoDetailToggle}>+</span>
       </div>
 
       <div className="infoUpperbox">
@@ -391,7 +392,7 @@ function Infobox () {
     <div className="infobox" id="info9">
       <div className="infoTitleContainer">
         <span className="infoTitle">시흥4동</span>
-        <span className="infoDetailbtn">+</span>
+        <span className="infoDetailbtn" onClick={infoDetailToggle}>+</span>
       </div>
 
       <div className="infoUpperbox">
@@ -439,7 +440,7 @@ function Infobox () {
     <div className="infobox" id="info10">
       <div className="infoTitleContainer">
         <span className="infoTitle">시흥2동</span>
-        <span className="infoDetailbtn">+</span>
+        <span className="infoDetailbtn" onClick={infoDetailToggle}>+</span>
       </div>
 
       <div className="infoUpperbox">
