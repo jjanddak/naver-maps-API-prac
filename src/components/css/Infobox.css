@@ -4,11 +4,125 @@
 
   background: rgba(52, 58, 63);
   position: absolute;
+  border-radius: 5px;
+  border: 2px solid #33B1FF;
+  border-left: 4px solid #33B1FF;
+  /* flex-direction: column;
+  text-align: center; */
+}
+.infoTitleContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 12px 5px 12px;
+}
+.infoTitle{
+  color: #FFFFFF;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: bold;
+}
+.infoDetailbtn{
+  color: #D8D8D8;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.infoUpperbox{
+  margin: 0 10px 0 10px;
+  height: 70px;
+  background: #161616;
+  opacity: 0.6;
+  border: 1px solid #000000;
+  border-radius: 2px;
+  color: #FFFFFF;
+  font-size: 12px;
+}
+.infoTotal{
+  padding: 0 5px 0 5px;
+  text-align: left;
+}
+.infoTotal span.boxText{
+  padding-right: 11px;
+  font-size: 12px;
+}
+span.quantity{
+  font-size: 18px;
+  font-weight: bold;
+  padding-right: 5px;
+}
+.upperCategory{
+  padding: 10px 5px 0 5px;
+  display: flex;
+  justify-content: space-between;
+  text-align: right;
+}
+span#cctv{
+  color: #42BE65;
+}
+span#bell{
+  color: #FFC061;
+}
+span#iot{
+  color: #BE95FF;
 }
 
 
+.infoLowerbox{
+  margin: 0 10px 0 10px;
+  padding: 5px 10px 5px 10px;
+  background: #161616;
+  opacity: 0.6;
+  border: 1px solid #000000;
+  border-radius: 2px;
+  color: #FFFFFF;
+  font-size: 12px;
+}
+.infoLowerbox div{
+  display: flex;
+  justify-content: space-between;
+}
+span#process{
+  color: #78A9FF;
+}
 
 #info1{
   top: 200px;
   left: 400px;
+}
+#info2{
+  top: 405px;
+  left: 400px;
+}
+#info3{
+  top: 610px;
+  left: 400px;
+}
+#info4{
+  top: 815px;
+  left: 400px;
+}
+#info5{
+  top: 572px;
+  left: 657px;
+}
+#info6{
+  top: 103px;
+  left: 1051px;
+
+}
+#info7{
+  top: 200px;
+  left: 1302px;
+}
+#info8{
+  top: 405px;
+  left: 1302px;
+}
+#info9{
+  top: 610px;
+  left: 1302px;
+}
+#info10{
+  top: 815px;
+  left: 1302px;
 }
