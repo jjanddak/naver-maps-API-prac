@@ -24,7 +24,8 @@ function RightPanel () {
         subtextStyle:{
           color:"#fff",
           fontWeight: "bold",
-          lineHeight: 5
+          fontSize: "20",
+          lineHeight: "5"
         },
         textAlign: "center"
       },
