@@ -1,0 +1,120 @@
+.RightPanel{
+  position: absolute;
+  width: 350px;
+  height: 980px;
+  left: 1560px;
+  top: 90px;
+
+  flex-direction: column;
+  background: rgba(52, 58, 63, 0.95);
+}
+
+.eventbox{
+  background: #161616;
+  opacity: 0.7;
+  color: #FFF;
+
+  border-radius: 5px;
+
+}
+.eventinnerbox{
+  padding: 15px 40px 18px 40px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+.eventcontent{
+  font-size: 14px;
+}
+.eventQuantity{
+  font-size: 14px;
+  padding-right: 2px;
+}
+.eventUnit{
+  font-size: 14px;
+}
+.RPdivider{
+  margin-top: 5px;
+  height: 35px;
+  width: 1px;
+  border-left: 1px solid rgb(151, 151, 151);
+}
+
+#controlchart{
+  height: 250px;
+}
+
+.eventList{
+  overflow-y: scroll;
+  height: 378px;
+  padding: 5px;
+}
+.eventList::-webkit-scrollbar {
+  width: 8px;
+}
+.eventList::-webkit-scrollbar-thumb {
+  background-color: #2f3542;
+  border-radius: 10px;
+}
+.eventList::-webkit-scrollbar-track {
+  background-color: grey;
+  border-radius: 10px;
+}
+
+.eventListbox{
+  background-color: #0a0a0a;
+  border-radius: 3px;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+.elistTitlebox{
+  display: flex;
+  justify-content: left;
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgb(110, 110, 110);
+}
+.eventTag{
+  padding: 0 5px 0 5px;
+  color: white;
+  margin-right: 5px;
+  font-size: 12px;
+}
+#violence{
+  background-color: #C93514;
+}
+#prowl{
+  background-color: #E8871A;
+}
+#boundary{
+  background-color: #DFBF03;
+}
+#calling{
+  background-color: #2780EB;
+}
+#obstacle{
+  background-color: #69B7BC;
+}
+#smoke{
+  background-color: #47E26F;
+}
+#group{
+  background-color: #5144D3;
+}
+#left{
+  background-color: #9089FA;
+}
+.eventboxContent{
+  font-size: 14px;
+  color: rgb(150, 150, 150);
+}
+.elistContentbox{
+  text-align: left;
+}
+.elistTimebox{
+  display: flex;
+  justify-content: space-between;
+  padding-right: 40px;
+}
+.eventTimestamp{
+  color: white;
+}

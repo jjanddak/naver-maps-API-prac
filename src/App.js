@@ -7,6 +7,7 @@ import Map from './components/Map';
 import Tempbar from './components/Tempbar';
 import Infobox from './components/Infobox';
 import InfoDetail from "./components/InfoDetail";
+import RightPanel from "./components/RightPanel";
 dotenv.config();
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
       <Tempbar />
       <Infobox infoDetailToggle={infoDetailToggle}/>
       {infoDetail && <InfoDetail  infoDetailToggle={infoDetailToggle}/>}
+      <RightPanel />
     </div>
   );
 }

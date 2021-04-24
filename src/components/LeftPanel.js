@@ -66,6 +66,7 @@ class LeftPanel extends React.Component {
     // legend: {
     //     data: ['Direct', 'Mail Ad', 'Affiliate Ad']
     // },
+    animation: false,
     legend: {
       top: '80%',
       left: 'center',
@@ -131,50 +132,7 @@ class LeftPanel extends React.Component {
     let systemChart = echarts.init(document.getElementById('systemchart'));
     // Draw the chart
     systemChart.setOption({
-  //     series: [
-  //         {
-  //             // name: '半径模式',
-  //             type: 'pie',
-  //             radius: [45, 65],
-  //             center: ['25%', '50%'],
-  //             roseType: ['area'],
-  //             itemStyle: {
-  //                 // borderRadius: 5
-  //             },
-  //             color:["#08BDBA","#000"],
-  //             label: {
-  //                 show: false
-  //             },
-  //             emphasis: {
-  //                 label: {
-  //                     show: false
-  //                 }
-  //             },
-  //             color:["#fff","#000"],
-  //             data: [
-  //                 {value: 78, name: 'rose 1'},
-  //                 {value: 22, name: 'rose 2'},
-  //             ]
-  //         },
-  //         {
-  //             // name: '面积模式',
-  //             type: 'pie',
-  //             radius: [45, 65],
-  //             center: ['75%', '50%'],
-  //             roseType: ['radius'],
-  //             itemStyle: {
-  //                 // borderRadius: 5
-  //             },
-  //             label: {
-  //                 show: false
-  //             },
-  //             data: [
-  //                 {value: 52, name: 'rose 1'},
-  //                 {value: 48, name: 'rose 2'},
-  //             ]
-  //         }
-  //     ]
-  // });
+    animation: false,
     series: [
         {
             // name: '半径模式',
