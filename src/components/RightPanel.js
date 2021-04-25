@@ -2,7 +2,7 @@ import * as echarts from 'echarts';
 import react, { useEffect } from "react";
 import "./css/RightPanel.css";
 
-function RightPanel () {
+function RightPanel ({RPmodalToggle}) {
   
   function setBellChart() {
     // initialize the echarts instance
@@ -124,6 +124,10 @@ function RightPanel () {
           <div id="controlchart">
             {/* 선별관제 차트 */}
           </div>
+        </div>
+
+        <div className="RPclosebtn" onClick={RPmodalToggle}>
+          ▶
         </div>
 
         <div className="chartTitle">

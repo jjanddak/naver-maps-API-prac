@@ -1,0 +1,50 @@
+.RPclose{
+  position: absolute;
+  left: 1870px;
+  top: 90px;
+  width: 50px;
+  height: 980px;
+
+  display: flex;
+  justify-content: start;
+
+  flex-direction: column;
+  background: rgba(52, 58, 63, 0.95);
+}
+.RPcloseTitle{
+  width: 100%;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #21272A;
+  border-left: 3px solid #1192E8 ;
+  color: #FFFFFF;
+}
+
+.RPcloseContent{
+  background: #161616;
+  opacity: 0.7;
+  color: #FFF;
+  font-size: 12px;
+
+  padding: 5px;
+  margin-top: 5px;
+}
+.RPopenbtn{
+  width: 25px;
+  height: 60px;
+  position: absolute;
+  left: -25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(52, 58, 63, 0.95);
+  color: rgba(255, 255, 255, 0.699);
+  font-size: 12px;
+  border-radius: 3px 0 0 3px;
+
+  cursor: pointer;
+}
