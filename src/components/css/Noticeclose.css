@@ -1,0 +1,22 @@
+.noticeclose{
+  position: absolute;
+  top: 1024px;
+  left: 370px;
+
+  width: 1180px;
+}
+.noticeTitlebox{
+  text-align: left;
+}
+.noticeicon{
+  padding: 10px;
+}
+.noticeTitleContent{
+  font-size: 18px;
+}
+.noticeopenbtn{
+  position: absolute;
+  right: 10px;
+
+  cursor: pointer;
+}

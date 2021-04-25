@@ -1,0 +1,50 @@
+.notice{
+  position: absolute;
+  top: 824px;
+  left: 370px;
+
+  width: 1180px;
+}
+.noticeList{
+  overflow-y: scroll;
+
+  padding: 15px 10px 10px 10px;
+  height: 174px;
+  background: rgba(52, 58, 63, 0.986);
+
+  border-radius: 0 0 5px 5px;
+}
+.noticeList::-webkit-scrollbar {
+  width: 8px;
+}
+.noticeList::-webkit-scrollbar-thumb {
+  background-color: #2f3542;
+  border-radius: 10px;
+}
+.noticeList::-webkit-scrollbar-track {
+  background-color: grey;
+  border-radius: 10px;
+}
+.noticeListbox{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 12px;
+
+  color: rgba(255, 255, 255, 0.856);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.233);
+
+  cursor: pointer;
+}
+.noticeNum{
+  margin-right: 30px;
+}
+.noticeListContent{
+  text-align: left;
+  width: 90%;
+}
+.noticeTimestamp{
+  right: 10px;
+}

@@ -10,6 +10,8 @@ import InfoDetail from "./components/InfoDetail";
 import RightPanel from "./components/RightPanel";
 import RPclose from "./components/RPclose";
 import LPclose from "./components/LPclose";
+import Noticeclose from "./components/Noticeclose";
+import Notice from "./components/Notice";
 dotenv.config();
 
 function App() {
@@ -17,9 +19,10 @@ function App() {
     infoDetail: false,
     RPmodal: true,
     LPmodal: true,
+    Noticemodal: false,
   })
 
-  const { infoDetail, RPmodal, LPmodal } = state;
+  const { infoDetail, RPmodal, LPmodal, Noticemodal } = state;
 
   const infoDetailToggle = () => {
     setState({...state, infoDetail: !infoDetail});
@@ -29,6 +32,9 @@ function App() {
   }
   const LPmodalToggle = () => {
     setState({...state, LPmodal: !LPmodal});
+  }
+  const NoticemodalToggle = () => {
+    setState({...state, Noticemodal: !Noticemodal});
   }
 
   return (
@@ -40,7 +46,7 @@ function App() {
       <Infobox infoDetailToggle={infoDetailToggle}/>
       {infoDetail && <InfoDetail infoDetailToggle={infoDetailToggle}/>}
       {RPmodal ? <RightPanel RPmodalToggle={RPmodalToggle}/> : <RPclose RPmodalToggle={RPmodalToggle}/>}
-      
+      {Noticemodal ? <Notice NoticemodalToggle={NoticemodalToggle}/> : <Noticeclose NoticemodalToggle={NoticemodalToggle}/>}
     </div>
   );
 }
