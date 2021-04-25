@@ -9,6 +9,7 @@ import Infobox from './components/Infobox';
 import InfoDetail from "./components/InfoDetail";
 import RightPanel from "./components/RightPanel";
 import RPclose from "./components/RPclose";
+import LPclose from "./components/LPclose";
 dotenv.config();
 
 function App() {
@@ -33,7 +34,7 @@ function App() {
   return (
     <div className="App">
       <Head />
-      <LeftPanel />
+      {LPmodal ? <LeftPanel LPmodalToggle={LPmodalToggle}/> : <LPclose LPmodalToggle={LPmodalToggle}/>}
       <Map />
       <Tempbar />
       <Infobox infoDetailToggle={infoDetailToggle}/>

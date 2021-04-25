@@ -82,7 +82,7 @@ function RightPanel ({RPmodalToggle}) {
 
   return (
     <div className="RightPanel">
-      <div className="LPtitle RPtitle">
+      <div className="LPtitle">
         <span className="LPicon">icon2</span>
         <span>이벤트 현황 (TODAY)</span>
       </div>

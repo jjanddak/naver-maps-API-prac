@@ -48,6 +48,7 @@
   width: 25px;
   height: 60px;
   position: absolute;
+  top: 460px;
   left: -25px;
   display: flex;
   align-items: center;

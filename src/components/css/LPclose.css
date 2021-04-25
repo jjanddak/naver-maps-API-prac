@@ -1,9 +1,11 @@
-.RPclose{
+.LPclose{
   position: absolute;
-  left: 1870px;
+  left: 0px;
   top: 90px;
   width: 50px;
   height: 980px;
+
+  z-index: 9;
 
   display: flex;
   justify-content: start;
@@ -28,16 +30,17 @@
   opacity: 0.7;
   color: #FFF;
   font-size: 12px;
+  writing-mode: vertical-rl;
 
   padding: 5px;
   margin-top: 5px;
 }
-.RPopenbtn{
+.LPopenbtn{
   width: 25px;
   height: 60px;
   position: absolute;
   top: 460px;
-  left: -25px;
+  left: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -45,7 +48,7 @@
   background: rgba(52, 58, 63, 0.95);
   color: rgba(255, 255, 255, 0.699);
   font-size: 12px;
-  border-radius: 3px 0 0 3px;
+  border-radius: 0 3px 3px 0;
 
   cursor: pointer;
 }

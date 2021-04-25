@@ -3,6 +3,10 @@ import React from "react";
 import "./css/LeftPanel.css"
 
 class LeftPanel extends React.Component {
+  constructor(props){
+    super(props);
+    this.LPmodalTogglefnc = this.LPmodalTogglefnc.bind(this);
+  }
 
   setBellChart() {
     // initialize the echarts instance
@@ -176,8 +180,12 @@ class LeftPanel extends React.Component {
             ]
         }
     ]
-})
-}
+  })
+  }
+
+  LPmodalTogglefnc () {
+    this.props.LPmodalToggle();
+  }
 
   componentDidMount() {
     this.setBellChart();
@@ -208,6 +216,10 @@ class LeftPanel extends React.Component {
           </div>
           <div id="cctvchart">
             {/* CCTV 차트 */}
+          </div>
+
+          <div className="LPclosebtn" onClick={this.LPmodalTogglefnc}>
+            ◀  
           </div>
 
           <div className="chartTitle systemCTitle">
