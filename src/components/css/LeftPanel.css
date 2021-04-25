@@ -92,19 +92,31 @@
   font-weight: normal;
 }
 
-#systemchart {
+.systemchartbox {
   height: 255px;
   background: #21272A;
   opacity: 0.6;
   border-radius: 5px;
   margin: 0;
-
+}
+.systemchartinnerbox{
+  display: flex;
+  height: 185px;
+}
+#systemchart {
+  height: 185px;
+  width: 50%;
+}
+#systemchart2 {
+  height: 185px;
+  width: 50%;
+}
+#diskchart{
+  height: 70px;
+  width: 100%;
 }
 
 .servercombobox {
-  /* height: 48px;
-  text-align: center;
-  padding-bottom: 10px; */
   display: flex;
   flex-direction: row;
   justify-content: center;

@@ -27,11 +27,29 @@ class LeftPanel extends React.Component {
             lineHeight: '20'
           }
       },
+      title: {
+        text: "86.16%",
+        left: "160",
+        top:"135",
+        color: "#fff",
+        textStyle: {
+          color: "#7BB600",
+          fontSize:"35"
+        },
+        subtext: "(542/629대)",
+        subtextStyle:{
+          color:"#ccc",
+          fontWeight: "bold",
+          fontSize: "14",
+          lineHeight: "50"
+        },
+        textAlign: "center"
+      },
       series: [
           {
             type: 'pie',
             top: "0%",
-            radius: ['40%', '70%'],
+            radius: ['48%', '70%'],
             avoidLabelOverlap: false,
             label: {
                 show: false,
@@ -67,9 +85,25 @@ class LeftPanel extends React.Component {
         }
     },
     barWidth:"100%",
-    // legend: {
-    //     data: ['Direct', 'Mail Ad', 'Affiliate Ad']
-    // },
+    title: {
+      text: "총 카메라 합계                          개",
+      left: "160",
+      top:"20",
+      color: "#fff",
+      textStyle: {
+        color: "#aaa",
+        fontSize:"14",
+        fontWeight:"normal"
+      },
+      subtext: "            1984",
+      subtextStyle:{
+        color:"#fff",
+        fontWeight: "normal",
+        fontSize: "25",
+        lineHeight: "-35",
+      },
+      textAlign: "center"
+    },
     animation: false,
     legend: {
       top: '80%',
@@ -82,11 +116,12 @@ class LeftPanel extends React.Component {
       }
   },
     xAxis: {
-        type: 'value'
+        type: 'value',
+        show:false
     },
     yAxis: {
         type: 'category',
-        // data: ['Mon']
+        show:false
     },
     series: [
         {
@@ -100,7 +135,8 @@ class LeftPanel extends React.Component {
             emphasis: {
                 // focus: 'series'
             },
-            data: [1858]
+            data: [1858],
+            barWidth:"30"
         },
         {
             name: '교통단속',
@@ -128,59 +164,183 @@ class LeftPanel extends React.Component {
             },
             data: [41]
         },
-    ]
+      ]
     });
   }
 
   setSystemChart() {
-    let systemChart = echarts.init(document.getElementById('systemchart'));
+    let systemchart = echarts.init(document.getElementById('systemchart'));
     // Draw the chart
-    systemChart.setOption({
-    animation: false,
-    series: [
-        {
-            // name: '半径模式',
-            type: 'pie',
-            radius: [45, 65],
-            center: ['25%', '50%'],
-            roseType: ['area'],
-            itemStyle: {
-                // borderRadius: 5
-            },
-            label: {
-                show: false
-            },
-            emphasis: {
-                label: {
-                    show: false
-                }
-            },
-            color:["#08BDBA","#000"],
-            data: [
-                {value: 78, name: 'rose 1'},
-                {value: 22, name: 'rose 2'},
-            ]
+    systemchart.setOption({
+      tooltip: {
+        trigger: 'item'
+      },
+      animation: false,
+      title: {
+        text: "CPU",
+        left: "77",
+        top:"70",
+        color: "#fff",
+        textStyle: {
+          color: "#fff",
+          fontSize:"20"
         },
-        {
-            // name: '面积模式',
+        subtext: "72%",
+        subtextStyle:{
+          color:"#fff",
+          fontWeight: "bold",
+          fontSize: "25",
+          lineHeight: "5"
+        },
+        textAlign: "center"
+      },
+      series: [
+          {
             type: 'pie',
-            radius: [45, 65],
-            center: ['75%', '50%'],
-            roseType: 'area',
-            itemStyle: {
-                // borderRadius: 5
-            },
+            top: "0",
+            radius: ['70%', '90%'],
+            avoidLabelOverlap: false,
             label: {
+                show: false,
+                position: 'center'
+            },
+            itemStyle: {
+              borderRadius: 1,
+              borderColor: '#21272A',
+              borderWidth: 2
+            },
+            color: ["#08BDBA","#000"],
+            labelLine: {
                 show: false
             },
-            color:["#BE95FF","#000"],
             data: [
-                {value: 52, name: 'rose 1'},
-                {value: 48, name: 'rose 2'},
+                {value: 72, name: 'CPU사용'},
+                {value: 28, name: 'idle'},
             ]
         }
-    ]
-  })
+      ]
+    });
+    let systemchart2 = echarts.init(document.getElementById('systemchart2'));
+    // Draw the chart
+    systemchart2.setOption({
+      tooltip: {
+        trigger: 'item'
+      },
+      animation: false,
+      title: {
+        text: "MEMORY",
+        left: "77",
+        top:"70",
+        color: "#fff",
+        textStyle: {
+          color: "#fff",
+          fontSize:"20"
+        },
+        subtext: "72%",
+        subtextStyle:{
+          color:"#fff",
+          fontWeight: "bold",
+          fontSize: "25",
+          lineHeight: "5"
+        },
+        textAlign: "center"
+      },
+      series: [
+          {
+            type: 'pie',
+            top: "0",
+            radius: ['70%', '90%'],
+            avoidLabelOverlap: false,
+            label: {
+                show: false,
+                position: 'center'
+            },
+            itemStyle: {
+              borderRadius: 1,
+              borderColor: '#21272A',
+              borderWidth: 2
+            },
+            color: ["#7BB600","#000"],
+            labelLine: {
+                show: false
+            },
+            data: [
+                {value: 72, name: '메모리사용'},
+                {value: 28, name: 'idle'},
+            ]
+        }
+      ]
+    });
+    let diskchart = echarts.init(document.getElementById('diskchart'));
+    // Draw the chart
+    diskchart.setOption({
+      tooltip: {
+        trigger: 'axis',
+        axisPointer: {            // Use axis to trigger tooltip
+            type: 'shadow'        // 'shadow' as default; can also be 'line' or 'shadow'
+        },
+    },
+    barWidth:"100%",
+    title: {
+      text: "DISK",
+      left: "40",
+      top:"5",
+      color: "#fff",
+      textStyle: {
+        color: "#fff",
+        fontSize:"10",
+        fontWeight:"bold"
+      },
+      subtext: "                                                                                                                                                                               67%",
+      subtextStyle:{
+        width:"100",
+        textAlign: "right",
+        color:"#fff",
+        fontWeight: "bold",
+        fontSize: "12",
+        lineHeight: "-32",
+      },
+      textAlign: "center"
+    },
+    animation: false,
+    xAxis: {
+        type: 'value',
+        show:false
+    },
+    yAxis: {
+        type: 'category',
+        show:false
+    },
+    series: [
+      {
+        name: 'DISK사용',
+        type: 'bar',
+        stack: 'total',
+        label: {
+            show: false
+        },
+        color:"#42BE65",
+        emphasis: {
+            // focus: 'series'
+        },
+        data: [67],
+        barWidth:"15"
+      },
+      {
+        name: 'idle',
+        type: 'bar',
+        stack: 'total',
+        label: {
+            show: false
+        },
+        color:"#000",
+        emphasis: {
+            focus: 'series'
+        },
+        data: [90]
+      },
+      ]
+    });
   }
 
   LPmodalTogglefnc () {
@@ -228,16 +388,24 @@ class LeftPanel extends React.Component {
             <span className="chartDate">2021.04.20 15:20:26</span>
           </div>
 
-            <div className="servercombobox">
-              <select>
-                <option defaultValue value="system">전체 서버</option>
-              </select>
-            </div>
-          <div id="systemchart">
-            {/* 시스템 현황차트 */}
+          <div className="servercombobox">
+            <select>
+              <option defaultValue value="system">전체 서버</option>
+            </select>
           </div>
-
-  
+          <div className="systemchartbox">
+            <div className="systemchartinnerbox">
+              <div id="systemchart">
+                {/* 시스템 현황차트 */}
+              </div>
+              <div id="systemchart2">
+                {/* 시스템 현황차트 */}
+              </div>
+            </div>
+            <div id="diskchart">
+              {/* 시스템 현황차트 */}
+            </div>
+          </div>
         </div>
       </div>
     );
