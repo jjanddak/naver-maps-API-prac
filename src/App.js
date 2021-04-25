@@ -29,9 +29,51 @@ function App() {
   }
   const RPmodalToggle = () => {
     setState({...state, RPmodal: !RPmodal});
+    if(RPmodal){
+      const arr=[];
+      arr.push(document.getElementById("info7"));
+      arr.push(document.getElementById("info8"));
+      arr.push(document.getElementById("info9"));
+      arr.push(document.getElementById("info10"));
+      document.getElementById("info6").style.left="1351px";
+      for(let ele of arr){
+        ele.style.left="1602px";
+      }   
+    }else{
+      const arr=[];
+      arr.push(document.getElementById("info7"));
+      arr.push(document.getElementById("info8"));
+      arr.push(document.getElementById("info9"));
+      arr.push(document.getElementById("info10"));
+      document.getElementById("info6").style.left="1051px";
+      for(let ele of arr){
+        ele.style.left="1302px";
+      }      
+    }
   }
   const LPmodalToggle = () => {
     setState({...state, LPmodal: !LPmodal});
+    if(LPmodal){
+      const arr=[];
+      arr.push(document.getElementById("info1"));
+      arr.push(document.getElementById("info2"));
+      arr.push(document.getElementById("info3"));
+      arr.push(document.getElementById("info4"));
+      document.getElementById("info5").style.left="357px";
+      for(let ele of arr){
+        ele.style.left="100px";
+      }
+    }else{
+      const arr=[];
+      arr.push(document.getElementById("info1"));
+      arr.push(document.getElementById("info2"));
+      arr.push(document.getElementById("info3"));
+      arr.push(document.getElementById("info4"));
+      document.getElementById("info5").style.left="657px";
+      for(let ele of arr){
+        ele.style.left="400px";
+      }
+    }
   }
   const NoticemodalToggle = () => {
     setState({...state, Noticemodal: !Noticemodal});
